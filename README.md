@@ -1,6 +1,15 @@
 # etude_de_cas
  Etude de cas projet bifrost
  
+ # Part A: Conception and preparation
+
+Please don't spend more than 20-30 minutes
+
+A.1) Choose a stack and briefly defend its advantages against this proposed example (Note: It could be completely different, it is up to you):
+
+[Example of stack](https://www.notion.so/ea50a09dce9345678ca23cc5ae150cd6)
+
+A.2 ) Create a GitHub repository that will host both backend and frontend code (and update it when finished)
  
  - PART B: Front-end
 
