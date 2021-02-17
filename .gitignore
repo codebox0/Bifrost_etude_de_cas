@@ -1,1 +1,7 @@
 .idea/
+
+
+# dependencies
+/node_modules
+Server/node_modules
+Front/node_modules

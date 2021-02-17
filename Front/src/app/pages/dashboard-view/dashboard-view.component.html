@@ -1,0 +1,35 @@
+<div class="container">
+    <div *ngIf="offerList.length < 1 " >
+      <label>You have in your wallet {{wallet}} {{devise}} </label>
+      <h1>there is no fruit in the market, please come back later </h1>
+
+
+    </div>
+
+
+  <div *ngIf="offerList.length > 0" class="offer-container">
+    <div class="flex-title">
+      <h1>Dashboard </h1>
+      <label>You have in your wallet {{user.wallet}} € </label>
+    </div>
+
+    <div class="offer-list">
+
+      <div class="form-group offer">
+        <p><label>Fruit </label><p>
+        <p><label>Quantity </label><p>
+        <p><label>Price </label><p>
+        <p><label>Can buy </label><p>
+      </div>
+      <div class="form-group offer" *ngFor="let offer of offerList">
+        <p><label> {{offer.fruitName}} </label> <p>
+        <p><label>  {{offer.fruitQuantity}} </label> <p>
+        <p><label> {{offer.fruitUnitPriceEUR}} </label> <p>
+        <p><button [disabled]="user.wallet<offer.price" (click)="buyOffer()"  >  Buy </button> <p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
